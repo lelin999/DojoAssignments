@@ -1,0 +1,12 @@
+cd desktop
+cd WebFoundamentals
+git init
+git add WebFoundamentals
+git commit -m "added WebFoundamentals"
+git remote add origin https://github.com/lelin999/DojoAssignments
+git push origin master
+touch readme.md
+git status
+git add WebFoundamentals
+git commit -m "added readme.md"
+git push origin master
