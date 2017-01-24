@@ -1,0 +1,1 @@
+Contains the first two weeks of materials at CodingDojo including Frontend basics such as JS HTML CSS.
