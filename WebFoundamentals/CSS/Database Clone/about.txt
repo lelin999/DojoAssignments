@@ -1,0 +1,1 @@
+Errors involve changing % of width/height to actual values so buttons don't move around.

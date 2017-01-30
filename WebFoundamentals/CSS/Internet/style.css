@@ -1,0 +1,39 @@
+.header{
+	background-color: red;
+	display: block;
+}
+
+.header img{
+}
+
+.header p{
+}
+
+.www{
+	background-color: gray;
+}
+
+.side_bar{
+	display: inline-block;
+	background-color: green;
+	position: relative;
+	bottom: 200px;
+}
+
+.tools{
+	display: block;
+}
+
+.ads{
+	display: block;
+}
+
+.main_layer{
+	background-color: brown;
+	display: inline-block;
+	position: relative;
+	text-align:;
+	width: 50%;
+}
+
+.{}
