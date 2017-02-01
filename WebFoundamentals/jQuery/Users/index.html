@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class='top_table'>
+		<table class='table1'>
+			<tr>
+				<th id='firstName'>First Name</th>
+				<th id='lastName'>Last Name</th>
+				<th id='email'>Email Address</th>
+				<th id=contact>Contact #</th>
+			</tr>
+		</table>
+	</div>
+	<h2>Add User</h2>
+	<div class='bar'></div>
+	<form id="form" action='process.php' method='post'>
+		First Name: <input type="text" name="firstname" value="First Name">
+		<br>
+		Last Name: <input type="text" name="lastname" value="Last Name">
+		<br>
+		Email Address: <input type="text" name="email" value="Email">
+		<br>
+		Contact #: <input type="text" name="contact" value="Contact #">
+		<br>
+		<input type="submit" value="Add User">
+	</form>
+</body>
+</html>
