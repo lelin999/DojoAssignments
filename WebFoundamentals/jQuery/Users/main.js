@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var email_value = $("form input[name='email']").val();
 		var contact_value = $("form input[name='contact']").val();
 
-		$('.table1').append("<tr><td>" + "insert text here" + "</td><td>" + "other text" + "</td><td>" + "more text" + "</td><td>" + "last text" + "</td></tr>");
+		$('.table1').append("<tr><td>" + first_name_value + "</td><td>" + last_name_value + "</td><td>" + email_value + "</td><td>" + contact_value + "</td></tr>");
 		
 		return false;
 	});
