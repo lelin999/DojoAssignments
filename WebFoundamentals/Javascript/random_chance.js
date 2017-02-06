@@ -6,10 +6,12 @@ var random = function (num, desired) {
 	num = num - 1;
 
 	if (num > 0) {
-		if ((Math.floor(Math.random() * 100)) + 1 === 1) {
+		if ((Math.floor(Math.random() * 100)) === 0) {
 			winnings = num + howMuchDidIWin();
-			if (winnings < desired) {
-				return random(winnings);
+			if (desired) {
+				if (winnings < desired) {
+					return random(winnings);
+				}	
 			}
 			return winnings;
 		} 
@@ -21,4 +23,4 @@ var random = function (num, desired) {
 	return 0;
 };
 
-random(100, 300);
+random(20);
