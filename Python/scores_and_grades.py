@@ -1,5 +1,4 @@
 import random
-
 def randnum():
 	random_num = int(round((random.random() * 40 + 60), 0))
 	return random_num
