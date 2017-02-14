@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>we did it bois</title>
+</head>
+<body>
+	<h1>SUCCESS BOIS</h1>
+	<h3>The email address you entered {{request.form['email']}} is valid!</h3>
+	{% for email in all_user_emails: %}
+	   <p>ID: {{ email['id'] }}</p>
+	   <p>Email: {{ email['email'] }}</p>
+	   <hr>
+	{% endfor %}
+</body>
+</html>
