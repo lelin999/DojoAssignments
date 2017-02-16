@@ -14,12 +14,9 @@ def index(req):
 def process(req):
 	if req.method == 'POST':
 		if req.POST['button'] == 'Go Back':
-			return render(req, 'form/index.html')
+			return redirect('/')
 		else:
-			# req.session['count'] += 1
-			# req.session['name'] = req.POST['name']
-			# req.session['location'] = req.POST['location']
-			# req.session['language'] = req.POST['language']
+			req.session['count'] += 1
 			context['name'] = req.POST['name']
 			context['location'] = req.POST['location']
 			context['language'] = req.POST['language']
