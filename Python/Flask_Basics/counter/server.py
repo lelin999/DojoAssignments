@@ -15,7 +15,7 @@ def clicked():
 	if request.form['button'] == 'Ninja +2':
 		session['counter'] += 2
 	elif request.form['button'] == 'Reset':
-		session['counter'] = 0
+		session['counter'] = 1
 	return render_template("index.html")
 
 app.run(debug=True)
