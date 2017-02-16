@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>sign up for death?</h1>
+	<form action='/process' method='post'>
+		{% csrf_token %}
+		Your Name: <input type="text" name="name"><br>
+		Dojo Location: <select name='location'>
+			<option>Silicon Valley</option>	
+			<option>Seattle</option>
+		</select><br>
+		Favorite Language: <select name='language'>
+			<option>Javascript</option>
+			<option>Python</option>
+		</select><br>
+		Comments (optional): <textarea></textarea><br>
+		<input type="submit" name="button" value="Submit">
+	</form>
+</body>
+</html>
