@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>randword</title>
+</head>
+<body>
+	<h1>isn't everything random af</h1>
+	<h1>This is count {{request.session.num}}</h1>
+	<h1>{{request.session.unique_id}}</h1>
+	<form action='/generate' method='post'>
+		{% csrf_token %}
+		<input type="submit" name="button" value="Generate">
+	</form>
+</body>
+</html>
