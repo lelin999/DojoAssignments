@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head>
+	<title>ninja be here</title>
+</head>
+<body>
+	{% if id == 'Leonardo' %}
+		<img src="{% static 'turtles/img/leonardo.jpeg' %}">
+	{% elif id == 'Donatello' %}
+		<img src="{% static 'turtles/img/donatello.jpeg' %}">
+	{% elif id == 'Michelangelo' %}
+		<img src="{% static 'turtles/img/michelangelo.jpeg' %}">
+	{% elif id == 'Raphael' %}
+		<img src="{% static 'turtles/img/raphael.jpeg' %}">		
+	{% elif id == 'Megan Fox' %}
+		<img src="{% static 'turtles/img/megan_fox.jpg' %}">
+	{% endif %}
+</body>
+</html>
