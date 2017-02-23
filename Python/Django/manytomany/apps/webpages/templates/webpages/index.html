@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webpages with shit happening</title>
+</head>
+<body>
+	<form action='/processview' method='post'>
+		{% csrf_token %}
+		<input type="submit" value="View People">
+	</form>
+	<form action='/processcreate' method='post'>
+		{% csrf_token %} 
+		Name: <input type="text" name="name">
+		Interest: <input type="text" name="interest">
+		<input type="submit" value="Submit">
+	</form>
+		{% if messages %}
+		<ul class="messages">
+	    {% for message in messages %}
+	    <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+	    {% endfor %}
+		</ul>
+		{% endif %}		
+</body>
+</html>
