@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dumb inheritance</title>
+</head>
+<body>
+	{% if messages %}
+	<ul class="messages">
+	    {% for message in messages %}
+	    <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+	    {% endfor %}
+	</ul>
+	{% endif %}
+	<form action='/process' method='post'>
+		{% csrf_token %}
+		Email Address: <input type="text" name="email">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

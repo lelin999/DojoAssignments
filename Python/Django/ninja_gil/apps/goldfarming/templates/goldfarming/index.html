@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GOLDDIGGER</title>
+</head>
+<body>
+
+	<h1>WHere's my MONEY!?</h1>
+	<h1>Your Gold: {{request.session.gil}}</h1>
+	<div>
+		<h3>Farm</h3>
+		<h6>(earns 10-20 gil)</h6>
+  	<form action="/process" method="post">
+  	{% csrf_token %}
+    	<input type="hidden" name="building" value="farm" />
+    	<input type="submit" value="Find Gold!"/>
+  	</form>		
+	</div>
+	<div>
+		<h3>Cave</h3>
+		<h6>(earns 5-10 gil)</h6>
+  	<form action="/process" method="post">
+  	{% csrf_token %}
+    	<input type="hidden" name="building" value="cave" />
+    	<input type="submit" value="Find Gold!"/>
+  	</form>		
+	</div>
+	<div>
+		<h3>House</h3>
+		<h6>(earns 2-5 gil)</h6>
+  	<form action="/process" method="post">
+  	{% csrf_token %}
+    	<input type="hidden" name="building" value="house" />
+    	<input type="submit" value="Find Gold!"/>
+  	</form>		
+	</div>
+	<div>
+		<h3>Casino</h3>
+		<h6>(earns/takes 0-50 gil)</h6>
+  	<form action="/process" method="post">
+  	{% csrf_token %}
+    	<input type="hidden" name="building" value="casino" />
+    	<input type="submit" value="Find Gold!"/>
+  	</form>		
+	</div>
+	<div>
+		<h1>Activity Log</h1>
+		<pre><p>{{request.session.activity}}</p></pre>
+	</div>
+</body>
+</html>

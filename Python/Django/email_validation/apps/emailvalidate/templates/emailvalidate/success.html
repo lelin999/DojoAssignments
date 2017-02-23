@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SUCCESS</title>
+</head>
+<body>
+	<h1>Email addresses entered:</h1>
+	<p>Congratulations! Your email {{req.POST}} was successful!</p>
+	{% for email in emails %}
+		<p>{{email.email}} {{email.created_at}} {{email.id}}</p>
+	{% endfor %}
+</body>
+</html>
